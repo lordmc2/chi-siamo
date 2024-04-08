@@ -1,132 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="LordMC ✨">
-  <meta property="og:description" content="LordMc Website - ">
-  <meta property="og:url" content="a">
-  <meta property="og:image" content="assets/Uo.png">
-  <meta name="theme-color" content="#00ffaa">
-  <meta name=“robots” content=“INDEX, FOLLOW">
-  <link rel="stylesheet" href="style.css" />
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="assets/alpha.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css"
-    integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw=="
-    crossorigin="anonymous" />
-  <title>LordMc</title>
-  <style>
-    body {
-      overflow: hidden;
-    }
-  </style>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>descrizione di LordMc</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<body id="top" oncontextmenu="return false" onclick="play();">
-  <audio autoplay id="audio">
-    <source src="https://cdn.discordapp.com/attachments/765919453766352916/794473375035818004/sound.mp3"
-      type="audio/mpeg">
-  </audio>
-
-  <section id="hero" class="s-home target-section">
-    <div class="shadow-overlay" id="wave"></div>
-    <div class="home-content">
-      <div class="row home-content__main" style="justify-content: center; align-items: center; display: flex;">
-        <main>
-          <div class="mainCard" data-tilt>
-            <div class="header">
-              <div class="logo" data-tilt>
-                <img src="assets/Uo.png" alt="Logo" />
-              </div>
-              <div class="name">
-                <h1>LordMc</h1>
-              </div>
-              <div class="subtitle">è un  server in fase di sviluppo.</div>
-              <div class="lower" data-tilt>
-                <div class="text1">
-                  <p>Hey sono Fraancy 👋
-                    <br>
-                    <br>
-                    <br> Attualmente stiamo aggiungendo tante modalità tra cui Lifesteal e KitPvP.
-                    <br> Quindi che aspetti entra.
-                    <br>
-                  </p>
-                </div>
-
-                <div class="social">
-                  <a href="https://discord.gg/Y75N9hF8" id="discord" target="_blank"><i class="fab fa-discord"></i></a>
-                  <a href="" id="youtube" target="_blank"><i
-                      class="fa-brands fa-youtube"></i></a>
-                </div>
-
-                <div class="buttons">
-                  <!-- <a href="https://discord.com/users/745732703424348169" target="_blank">Discord</a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
+      <a href="https://wiki.example.com/" class="desktop_navbar_link"></a>
+      <a href="#discord" class="desktop_navbar_link scroll">Community</a>
+      <a href="#about" class="desktop_navbar_link scroll">Staff member</a>
+      <div class="desktop_navbar_link2_div">
+          <a class="main5_admins_description_title" href="https://lordmc2.github.io/chi-siamo/">Chi siamo</a>
+    </nav>
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
+      <div id="mobile_navbar_links">
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://wiki.example.com/">Wiki</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Community</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">Staff member</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="https://lordmc2.github.io/chi-siamo/">Chi siamo</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+        </script>
     </div>
-  </section>
-  <!--       <footer id="footer">
-
-        <div class="container d-md-flex py-4">
-      
-          <div class="me-md-auto text-center text-md-start">
-            <div class="copyright">
-              &copy; Copyright. All Rights Reserved
-            </div>
-            <div class="credits">
-              Developed by <a href="https://github.com/Alpha1005" target="_blank">Alpha_1005</a>
-            </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+          <img class="main1_logo" src="media/logo.png" alt="logo">
+        </a>
+        <div class="main1_description">
+          <a>Server,<br>Minecraft</a>
+          <a class="main1_actcent">cosa aspetti entra</a><a>.</a>
+        </div>
+        <div class="main1_ipcopier_div">
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">LordMc</span>
+            <br>
+            <span class="main1_ipcopier_text2">Clicca per copiare</span>
+          </button>
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+            ("play.lordmc.it");
+                }
+            $(document).ready(function() {
+            $('.main1_ipcopier').click(function() {
+                var popup = $('<div>', { class: 'main1_popup' })
+                .append($('<h3 class="copy_confirm">').text('il link del server discord è stato copiato con succeso'))
+                $(this).after(popup);
+                setTimeout(function() {
+                popup.remove();
+                }, 1000);
+            });
+            });
+        </script>
+        </div>
+        <a href="#more" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+      </div>
+      <div id="more"></div>
+      <div class="main2">
+        <a class="headline">Modalità</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/Lifesteal.png">
+            <a class="main2_feature_headline">Lifesteal</a>
+            <a class="main2_feature_text"></a>
           </div>
-          <div class="social-links text-center text-md-end pt-3 pt-md-0">
-            <a href="https://twitter.com/Alpha1005_" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-            <a href="https://github.com/Alpha1005" class="discord" target="_blank"><i class="bx bxl-discord"></i></a>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
+            <a class="main2_feature_headline">in arrivo</a>
+            <a class="main2_feature_text"></a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
+            <a class="main2_feature_headline">in arrivo</a>
+            <a class="main2_feature_text"></a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
+            <a class="main2_feature_headline">in arrivo...</a>
+            <a class="main2_feature_text"></a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
+            <a class="main2_feature_headline">in arrivo...</a>
+            <a class="main2_feature_text"></a>
           </div>
         </div>
-      </footer> -->
-
-  <script src="assets/vanilla_tilt.js" charset="utf-8"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.3/dist/aos.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.96.0/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.96.0/examples/js/renderers/CanvasRenderer.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.96.0/examples/js/renderers/Projector.js"></script>
-  <script src="https://kit.fontawesome.com/a1fd1358c5.js" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-  <script type="text/javascript">
-    document.onkeydown = function (e) {
-      e = e || window.event;
-      if (e.ctrlKey) {
-        var c = e.which || e.keyCode;
-        switch (c) {
-          case 83:
-          case 85:
-          case 65:
-          case 73:
-            e.preventDefault();
-            e.stopPropagation();
-            break;
-        }
-      }
-    };
-
-    window.addEventListener('contextmenu', function (e) {
-      e.preventDefault();
-    }, false);
-  </script>
-</body>
-
-</html>
+      </div>
+      <div id="discord"></div>
+      <div class="main4">
+        <a class="headline">unisciti al nostro server Discord</a>
+        <div class="main4_dc_div">
+          <iframe class="main4_dc_widget" src="https://cdn.discordapp.com/attachments/1163459191034363976/1224698353875681360/Progetto_senza_titolo_5.png?ex=661e7039&is=660bfb39&hm=f2d60ea1f2306b231ff6e532ed01d15498908400efa372018358b294d3dfa494&" width="350" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <div class="main4_dc_description_div">
+            <a class="main4_dc_description_title">Parliamo!</a>
+            <a class="main4_dc_description"> ・Incontra altri giocatori <br> ・Fare domande <br> ・Ricevi notifiche sugli aggiornamenti <br> ・ Dare un feedback  <br><br> &amp; molto altro</a>
+            <a class="main4_dc_description"> ・e puoi comprare i rank nel ds</a>
+            <a href="https://discord.gg/WCxz5uVG" class="main4_dc_button_a">
+              <div class="main4_dc_button">Unisciti</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="about"></div>
+      <div class="main5">
+        <a class="headline">Membri dello staff</a>
+        <div class="main5_admin_div">
+          <div class="main5_admins_div main5_admins_dev_type2">
+            <img class="main5_admins_img" alt="admin member img" src="https://cdn.discordapp.com/attachments/1163459191034363976/1222629254609637499/download_11.png?ex=662023b9&is=660daeb9&hm=95fa106e26d3a2343baf55556c19bed7bbcc540d94a6ed65333e3978899bdafa&">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">founder</a> 
+              <a class="main5_admins_description_title" href="">denis5568</a>
+              <a class="main5_admins_description"><br>il creatore del server </a>
+            </div>
+          </div>
+          
+        <div class="main5_supporter_div">
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="https://cdn.discordapp.com/attachments/1163459191034363976/1222273283592818729/download_3.png?ex=66159db3&is=660328b3&hm=b2f21bb1e260599c3b92659e74efaf6c5d1c4b20a21ac060b4458263cd31cb24&">
+            <div class="main5_supporters_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">founder</a>
+              <a class="main5_supporters_description_title"> gabryxxx</a>
+              <a class="main5_supporters_description"><br>il creatore del server</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="https://cdn.discordapp.com/attachments/1163459191034363976/1222629255226200094/download_9.png?ex=6616e939&is=66047439&hm=6bfab3e3723ff4dcb2bb56309cd56d57b2524c797c9ee0f260686a7b17143e7c&">
+            <div class="main5_supporters_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">founder</a>
+              <a class="main5_supporters_description_title">CBA_DEV</a>
+              <a class="main5_supporters_description"><br>l'owner del server</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="https://cdn.discordapp.com/attachments/1163459191034363976/1224411665177776278/DavideTL.png?ex=661d6539&is=660af039&hm=6f58b959c21f593b81bd0c696449389bfa1777aa8475b3bb0b0fc93a4fa96176&">
+            <div class="main5_supporters_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">sradmin</a>
+              <a class="main5_supporters_description_title">le1nv3r</a>
+              <a class="main5_supporters_description"><br>il senior admin del server</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="https://cdn.discordapp.com/attachments/1163459191034363976/1222629255436042340/download_8.png?ex=662023b9&is=660daeb9&hm=d4006fb5c8562419f296fd647e063636815063ae40e0548805a2ee06c96707eb&">
+            <div class="main5_supporters_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">sradmin</a>
+              <a class="main5_supporters_description_title">francy</a>
+              <a class="main5_supporters_description"><br>il senior admin del server</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+		
