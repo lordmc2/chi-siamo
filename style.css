@@ -34,7 +34,7 @@ header{
 }
 .logo{
     font-size: 3rem;
-    color: #09e0d6;
+    color: #01caca;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -52,8 +52,8 @@ nav a{
 }
 nav a:hover,
 nav a.active{
-    color: #09e0d6;
-    border-bottom: 3px solid #09e0d6;
+    color: #01caca;
+    border-bottom: 3px solid #01caca;
 }
 @media(max-width:995px){
     nav{
@@ -62,8 +62,8 @@ nav a.active{
         top: 0;
         right: 0;
         width: 40%;
-        border-left: 3px solid #09e0d6;
-        border-bottom: 3px solid #09e0d6;
+        border-left: 3px solid #01caca;
+        border-bottom: 3px solid #01caca;
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
         background-color: #161616;
@@ -81,7 +81,7 @@ nav a.active{
     nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #09e0d6;
+        border-bottom: 0.5rem solid #01caca;
     }
 }
 section{
@@ -101,7 +101,7 @@ section{
     line-height: 1.3;
 }
 span{
-    color: #09e0d6;
+    color: #01caca;
 }
 .home-content h3{
     font-size: 4rem;
@@ -118,7 +118,7 @@ span{
     position: relative;
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px solid #09e0d6;
+    box-shadow: 0 0 25px solid #01caca;
     cursor: pointer;
     transition: 0.2s linear;
 }
@@ -133,38 +133,132 @@ span{
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid #09e0d6;
+    border: 0.2rem solid #01caca;
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: #09e0d6;
+    color: #01caca;
 }
 .social-icons a:hover{
     color: black;
     transform: scale(1.3) translateY(-5px);
-    background-color: #09e0d6;
-    box-shadow: 0  0 25px #09e0d6;
+    background-color: #01caca;
+    box-shadow: 0  0 25px #01caca;
 }
-.btn{
-    display: inline-block;
+
+
+
+
+
+
+
+
+
+/* Stili generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 1rem 9%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100; 
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-right: 2rem;
+}
+
+a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #01caca;
+}
+
+
+.btn {
+    position: fixed;
+    top: 20px;   
+    right: 20px; 
     padding: 1rem 2.8rem;
     background-color: black;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #09e0d6;
+    color: #01caca;
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid #09e0d6;
+    border: 2px solid #01caca;
     transition: 0.3s ease;
     cursor: pointer;
+    z-index: 200; 
 }
-.btn:hover{
+
+
+.btn:nth-child(2) {
+    right: 200px; 
+}
+
+
+.btn:hover {
     transform: scale3d(1.03);
-    background-color: #09e0d6;
+    background-color: #01caca;
     color: black;
-    box-shadow: 0 0 25px #09e0d6;
+    box-shadow: 0 0 25px #01caca;
 }
+
+
+.home {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home .home-content p {
+    font-size: 1.6rem;
+}
+
+
+
+
 .typing-text{
     font-size: 34px;
     font-weight: 600;
@@ -174,8 +268,8 @@ span{
     position: relative;
 }
 .typing-text span::before{
-    content: "software Developer";
-    color: #0b8d87;
+    content: "";
+    color: #01caca;
     animation: words 20s infinite;
 }
 .typing-text span::after{
@@ -190,26 +284,10 @@ span{
 }
 @keyframes cursor{
     to{
-        border-left: 3px solid #09e0d6;
+        border-left: 3px solid #01caca;
     }
 }
-@keyframes words{
-    0%, 20%{
-        content: "Developer";
-    }
-    21%, 40%{
-        content: "People";
-    }
-    41%, 60%{
-        content: "Developer";
-    }
-    61%, 80%{
-        content: "People";
-    }
-    81%, 100%{
-        content: "Developer";
-    }
-}
+
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
