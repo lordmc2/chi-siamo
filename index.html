@@ -13,10 +13,18 @@
         <a href="javascript:void(0)" onclick="loadContent('home')">Home</a>
         <a href="#forum">Forum</a>
         <a href="#store"><span>Store</span></a>
-        <a href="javascript:void(0)" onclick="loadContent('vota')">Vota</a>
-        <a href="javascript:void(0)" onclick="loadContent('staff')">Staff</a>
-        <a href="javascript:void(0)" onclick="loadContent('regole')">Regole</a>
-        <!-- Menu hamburger -->
+        <div class="dropdown">
+            <a href="javascript:void(0)">Menu ▼</a>
+            <div class="dropdown-content">
+                <a href="javascript:void(0)" onclick="loadContent('vota')">Vota</a>
+                <a 
+href="javascript:void(0)"
+onclick="loadContent('staff')">Staff            </a>
+                <a href="javascript:void(0)" onclick="loadContent('regole')">Regole</a>
+            </div>
+        </div>
+    </div>
+        <!-- Menu hamburger per il telefono -->
         <div class="hamburger" onclick="toggleMobileMenu()">
             <div></div>
             <div></div>
@@ -24,14 +32,14 @@
         </div>
     </div>
 
-    <!-- Menu mobile -->
+    <!-- Menu mobile (solo per telefono) -->
     <div class="mobile-menu">
         <a href="javascript:void(0)" onclick="loadContent('home')">Home</a>
+        <a href="#store">Store</a>
         <a href="#forum">Forum</a>
-        <a href="#store"><span>Store</span></a>
-        <a href="javascript:void(0)" onclick="loadContent('vota')">Vota</a>
-        <a href="javascript:void(0)" onclick="loadContent('staff')">Staff</a>
+        <a href="#discord">Discord</a>
         <a href="javascript:void(0)" onclick="loadContent('regole')">Regole</a>
+        <a href="javascript:void(0)" onclick="loadContent('vota')">Vota</a>
     </div>
 
     <!-- Contenuto principale -->

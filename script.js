@@ -22,11 +22,6 @@ function loadContent(section) {
             <h1>Vota per il Server</h1>
             <p>Supportaci votando il nostro server sui principali siti di server Minecraft!</p>
         `;
-    } else if (section === 'staff') {
-        content.innerHTML = `
-            <h1>Staff del Server</h1>
-            <p>Qui trovi l'elenco dello staff che lavora sul nostro server.</p>
-        `;
     }
 }
 
