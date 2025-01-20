@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Server</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="javascript:void(0)" onclick="loadContent('home')">Home</a>
+        <a href="#forum">Forum</a>
+        <a href="#store"><span>Store</span></a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-btn">Menu ▼</a>
+            <div class="dropdown-content">
+                <a href="javascript:void(0)" onclick="loadContent('vota')">Vota</a>
+                <a href="javascript:void(0)" onclick="loadContent('staff')">Staff</a>
+                <a href="javascript:void(0)" onclick="loadContent('regole')">Regole</a>
+            </div>
+        </div>
+        <!-- Menu hamburger per mobile -->
+        <div class="hamburger" onclick="toggleMobileMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="mobile-menu">
+            <a href="javascript:void(0)" onclick="loadContent('home')">Home</a>
+            <a href="#forum">Forum</a>
+            <a href="#store"><span>Store</span></a>
+            <a href="javascript:void(0)" onclick="loadContent('vota')">Vota</a>
+            <a href="javascript:void(0)" onclick="loadContent('staff')">Staff</a>
+            <a href="javascript:void(0)" onclick="loadContent('regole')">Regole</a>
+        </div>
+    </div>
+
+    <!-- Contenuto principale -->
+    <div id="content" class="content">
+        <h1>Ciao, Noi siamo Server</h1>
+        <p>Benvenuto nel nostro server web Minecraft. Esplora, gioca e divertiti!</p>
+    </div>
+</body>
+</html>
